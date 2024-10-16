@@ -1,0 +1,194 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keyword" content="Herbi Herbarium">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<meta name="author" content="Isaac Chong">
+	<title>Enquiry Form</title>
+    <link rel="icon" href="images/Logo.png"/>
+	<link rel="stylesheet" href="styles/style.css" />
+</head>  
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="./index.html"><img src="./images/Logo.png" alt="logo" title="Herbi"></a>
+        </div> 
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">☰</label>
+
+          <ul class="nav-links">
+              <li><a href="./index.html">Home</a></li>
+              <li class="dropdown">
+                  <a href="./newclassify.html">Plant Classification</a>
+              </li>
+              
+              <li class="dropdown">
+                  <a href="./tutorial.html">Tutorial</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="./tutorial.html">Tutorial</a></li>
+                      <li><a href="./tools.html">Tools</a></li>
+                      <li><a href="./care.html">Care</a></li>
+                  </ul>
+              </li>
+              <li><a href="./identify.html">Identity</a></li>
+              <li><a href="./contribute.html">Contribution</a></li>
+              <li><a href="./Enquiry.html">Enquiry</a></li>
+              <li><a href="./registration.html">Register</a></li>
+              <li class="dropdown"><a href="enhancement1.html">Enhancement</a></li>
+              <li><a href="./group_member.html">About Us</a></li>
+          </ul>
+      </nav>
+
+        <div class="form-container">
+	     <header>Enquiry Page</header>
+         <form action="#" class="form">
+			<div class="entryarea">
+             <input type="text" id="fFirst_name" name="fFirst_name" maxlength="25" pattern="[A-Za-z]+" required />	
+				 <span>First Name</span>
+            </div>				
+           	<div class="entryarea">
+				 <input type="text" id="fLast_name" name="fLast_name" maxlength="25" pattern="[A-Za-z]+" required />
+				 <span>Last Name</span>
+		    </div>
+
+
+            <div class="input">
+                 <label for="email">Email</label>
+                 <input type="email" id="email" name="contact" placeholder="name@domain.com" required />
+            </div>
+
+			<div class="inputbox">
+                 <label for="phone">Phone Number</label>
+                 <input type="tel" id="phone" name="phone" placeholder="(##)####-####" pattern="\(\d{2}\)+\d{4}-\d{4}" required />
+            </div>
+			
+		    <div class="inputbox">
+			     <label for="date">Date of birth</label>
+				 <input type="text" id="date" name="date" placeholder="dd/mm/yy" pattern="\d{2}/\d{2}/\d{4}" required />
+	        </div>
+			 
+			<fieldset class="address">
+			    <legend>Address</legend>
+				
+				<div class="input-container">
+			     <label for ="street_address">Street Address</label>
+				 <input type="text" id="street_address" name="street_address" placeholder="Enter street address" maxlength="40" required />
+                </div>
+				
+				<div class="input-container">
+				 <label for ="city">City</label>
+				 <input type="text" id="city" name="city" placeholder="Enter city" maxlength="20" required />
+				</div>
+				
+				<div class="input-container">
+				     <label for="state">Select State</label>
+				     <select id="state" required >
+					         <option value="" disabled selected>Select your state</option>
+							 <option value="Kedah">Kedah</option>
+							 <option value="Kelantan">Kelantan</option>
+							 <option value="Johor">Johor</option>
+							 <option value="Negeri Sembilan">Negeri Sembilan</option>
+							 <option value="Malacca">Malacca</option>
+							 <option value="Sarawak">Sarawak</option>
+							 <option value="Selangor">Selangor</option>
+							 <option value="Terengganu">Terengganu</option>
+							 <option value="Penang">Penang</option>
+							 <option value="Sabah">Sabah</option>
+							 <option value="Federal Territories">Federal Territories</option>
+							 <option value="Perlis">Perlis</option>
+							 <option value="Pahang">Pahang</option>
+							 <option value="Perak">Perak</option>
+				     </select>
+				</div>
+				
+				<div class="input-container">
+				 <label for="postcode">Postal Code</label>   
+				 <input type="text" id="postcode" name="postcode" placeholder="Enter postsal code" pattern="\d{5}" required />  
+                </div>				 
+		    </fieldset>
+			
+	        
+			<div class="select-box">
+                 <label for="tutorial">Tutorial</label>
+				 <select name="tutorial" id="tutorial" required>
+				        <option value="" disabled selected>Select a tutorial</option>
+						<option value="tutorial.html">Tutorial: How to Transfer a Fresh Leaf</option>
+						<option value="tools.html">Tools: Information on Hebarium Tools</option>
+						<option value="care.html">Care: How to Preserve Herbarium Specimens</option>
+			     </select>     
+            </div>	 
+			
+			<div class="button-container">
+                 <button type="submit">Submit</button>
+            </div>
+		
+         </form>
+		 </div>
+
+
+         <footer class="footer">
+            <div class="row-footer">
+                <h2>Contact Us</h2>
+                <br>
+                <p>Phone Number:<a href="tel:+60166152385"> +6016 - 615 2385</a></p>
+                <p>Email Address:<br><a href="mailto:customers-services@herbi.com">customers-services@herbi.com</a></p>
+            </div>
+    
+            <div class="row-footer">
+                <h2 id="address-footer">Address</h2>
+                <br>
+                <p class="center">No 666, Lot 1886, Ground Floor, Jalan Simpang Tiga, 93350, Kuching, Sarawak.</p>
+            </div>
+    
+            <div class="row-footer">
+                <h2>Follow Us</h2>
+                <br>
+                <div class="Icon">
+                    <a href="https://www.facebook.com/" target="Icon">
+                        <img src="./images/footer/Facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="Icon">
+                        <img src="./images/footer/Instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/" target="Icon">
+                        <img src="./images/footer/youtube.png" alt="Youtube">
+                    </a>
+                </div>
+            </div>
+    
+            <div class="acknowledgement">
+                <h2>Acknowledgement</h2>
+                <div class="acknowledgement-row">
+                    <ul>
+                        <li><a href="https://fwbg.org/phytophilia-blog/plant-collecting-how-to/preservation-and-storage/">Preserve Storage</a></li>
+                        <li><a href="https://www.rbge.org.uk/science-and-conservation/herbarium/specimen-preparation-care/care-and-conservation-of-herbarium-specimens/">Handle Storage Guide</a></li>
+                    </ul>
+                </div>
+                <div class="acknowledgement-row">
+                    <ul>
+                        <li><a href="https://www.freshlypressed.ch/blog/2017/7/2/herbarium-how-to-1-ythsk">Ways Preserve</a></li>
+                        <li><a href="https://www.rbge.org.uk/science-and-conservation/herbarium/our-collections/silica-dried-collection/">Collection</a></li>
+                    </ul>
+                </div>
+                <div class="acknowledgement-row">
+                    <ul>
+                        <li><a href="https://www.nps.gov/museum/publications/conserveogram/11-12.pdf">Prepare and Storage</a></li>
+                        <li><a href="https://www.rbge.org.uk/media/9028/preparation-care-and-art-of-herbarium-specimens-revised-15-feb-2022.pdf">Collection Care</a></li>
+                    </ul>
+                </div>
+    
+                <br>
+                <br>
+                <br>
+                <br>
+    
+                <div class="copyright-footer">
+                    <hr>
+                    <p>&copy; 2024 Herbi. All Right Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+    </html>
